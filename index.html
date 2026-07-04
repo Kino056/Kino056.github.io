@@ -7,15 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="bg-glow bg-glow--hero" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--section" aria-hidden="true"></div>
+
     <header class="site-header">
       <div class="container header-content">
-        <div class="logo">Jinye Zhang</div>
+        <a class="logo" href="#">Jinye Zhang</a>
         <nav class="nav">
           <a href="#about">About</a>
           <a href="#research">Research</a>
@@ -30,17 +33,43 @@
         <div class="container hero-content">
           <div class="hero-text">
             <p class="eyebrow">Hello, I'm</p>
-            <h1>Jinye Zhang</h1>
+            <h1>Jinye <span class="serif">Zhang</span></h1>
             <p class="subtitle">
-              An undergraduate student in Software Engineering at Wuhan University.
-              I focus on multimodal large language models and emotion recognition
-              inference.
+              Class of 2024 undergraduate in Software Engineering at Wuhan University,
+              studying in Professor Wang Zheng's research group.
             </p>
             <div class="hero-actions">
-              <a class="primary" href="#research">Research Focus</a>
-              <a class="ghost" href="#contact">Get in Touch</a>
+              <a class="btn btn-primary" href="#research">Research Focus</a>
+              <a class="btn btn-ghost" href="#contact">Get in Touch</a>
             </div>
           </div>
+
+          <aside class="hero-card">
+            <div class="avatar" aria-hidden="true">JZ</div>
+            <div class="hero-card-body">
+              <div class="hero-card-top">
+                <span class="badge">Open to Collaboration</span>
+              </div>
+              <ul class="card-list">
+                <li>
+                  <span class="card-list-label">University</span>
+                  <span class="card-list-value">Wuhan University</span>
+                </li>
+                <li>
+                  <span class="card-list-label">Class</span>
+                  <span class="card-list-value">2024 Undergraduate</span>
+                </li>
+                <li>
+                  <span class="card-list-label">Major</span>
+                  <span class="card-list-value">Software Engineering</span>
+                </li>
+                <li>
+                  <span class="card-list-label">Lab</span>
+                  <span class="card-list-value">Prof. Wang Zheng's Group</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -48,24 +77,31 @@
         <div class="container about-content">
           <div class="section-title">
             <p class="eyebrow">About</p>
-            <h2>Student Researcher in Intelligent Systems</h2>
+            <h2>Student Researcher in <span class="serif">Intelligent Systems</span></h2>
           </div>
           <div class="about-grid">
-            <p>
-              I am a Software Engineering undergraduate at Wuhan University. My
-              current interests include multimodal LLMs, affective computing, and
-              efficient inference for real-world applications.
+            <p class="about-lead">
+              My interests include multimodal LLMs, affective computing, and efficient
+              inference for real-world applications.
             </p>
             <div class="about-cards">
               <div class="about-card">
+                <div class="card-icon" aria-hidden="true">🏛</div>
                 <h3>University</h3>
                 <p>Wuhan University</p>
               </div>
               <div class="about-card">
-                <h3>Major</h3>
-                <p>Software Engineering (B.Eng.)</p>
+                <div class="card-icon" aria-hidden="true">🔬</div>
+                <h3>Research Group</h3>
+                <p>Professor Wang Zheng's Lab</p>
               </div>
               <div class="about-card">
+                <div class="card-icon" aria-hidden="true">💻</div>
+                <h3>Major</h3>
+                <p>Software Engineering</p>
+              </div>
+              <div class="about-card">
+                <div class="card-icon" aria-hidden="true">🧠</div>
                 <h3>Research Areas</h3>
                 <p>Multimodal LLMs, Emotion Recognition, Inference</p>
               </div>
@@ -74,31 +110,34 @@
         </div>
       </section>
 
-      <section id="research" class="section alt">
+      <section id="research" class="section section-alt">
         <div class="container">
           <div class="section-title">
             <p class="eyebrow">Research</p>
-            <h2>Multimodal Intelligence and Emotion Understanding</h2>
+            <h2>Multimodal Intelligence &amp; <span class="serif">Emotion Understanding</span></h2>
           </div>
           <div class="project-grid">
             <article class="project-card">
+              <div class="project-icon" aria-hidden="true">01</div>
               <div class="project-header">
                 <h3>Multimodal LLMs</h3>
-                <span class="tag">Vision + Language</span>
+                <span class="tag tag-blue">Vision + Language</span>
               </div>
               <p>Exploring aligned representations for robust multimodal reasoning.</p>
             </article>
             <article class="project-card">
+              <div class="project-icon" aria-hidden="true">02</div>
               <div class="project-header">
                 <h3>Emotion Recognition</h3>
-                <span class="tag">Affective AI</span>
+                <span class="tag tag-violet">Affective AI</span>
               </div>
               <p>Studying inference pipelines for reliable emotion understanding.</p>
             </article>
             <article class="project-card">
+              <div class="project-icon" aria-hidden="true">03</div>
               <div class="project-header">
                 <h3>Efficient Inference</h3>
-                <span class="tag">Systems</span>
+                <span class="tag tag-emerald">Systems</span>
               </div>
               <p>Optimizing models for practical deployment and responsiveness.</p>
             </article>
@@ -108,25 +147,23 @@
 
       <section id="contact" class="section contact">
         <div class="container contact-content">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Let's Connect</h2>
+          <div class="contact-intro">
+            <p class="eyebrow eyebrow-light">Contact</p>
+            <h2>Let's <span class="serif">Connect</span></h2>
             <p>Feel free to reach out for research discussions or collaboration.</p>
           </div>
           <div class="contact-card">
-            <div>
+            <div class="contact-item">
               <span class="contact-label">Email</span>
-              <a
-                class="contact-link"
-                href="mailto:2024302111071@whu.edu.cn"
+              <a class="contact-link" href="mailto:2024302111071@whu.edu.cn"
                 >2024302111071@whu.edu.cn</a
               >
             </div>
-            <div>
+            <div class="contact-item">
               <span class="contact-label">Location</span>
               <span class="contact-link">Wuhan, China</span>
             </div>
-            <div>
+            <div class="contact-item">
               <span class="contact-label">GitHub</span>
               <a
                 class="contact-link"
